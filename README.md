@@ -1,6 +1,16 @@
 # pytorch-distributed-training
 A simple cookbook for DDP training in Pytorch. To specify the number of GPU per node, you can change the ```nproc_per_node``` and ```CUDA_VISIBLE_DEVICES``` defined in ```train.sh```.
 
+You can find your ID address via
+
+```bash
+import socket
+
+print('The name of machine is: ' + socket.gethostname())
+ 
+print('The IP address is: ' + socket.gethostbyname(socket.gethostname()))
+```
+
 # Single machine
 ```bash
 $ sh train.sh 0 1
