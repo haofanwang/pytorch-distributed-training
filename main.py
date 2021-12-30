@@ -125,7 +125,7 @@ if __name__ == "__main__":
     
     # optmizer
     criterion = torch.nn.CrossEntropyLoss()
-    optmizer = torch.optim.Adam(model.parameters(), lr=args.lr)
+    optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
     
     # training mode
     model.train()
