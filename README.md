@@ -1,5 +1,5 @@
 # pytorch-distributed-training
-A simple cookbook for DDP training in Pytorch.
+A simple cookbook for DDP training in Pytorch. To specify the number of GPU per node, you can change the ```nproc_per_node``` and ```CUDA_VISIBLE_DEVICES``` defined in ```train.sh```.
 
 # Single machine
 ```bash
